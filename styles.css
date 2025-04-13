@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: URL('https://preview.colorkit.co/color/212020.png?size=wallpaper&static=true')
+}
+
+/*MENU*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background-color: rgb(182, 27, 27);
+  filter: brightness(0.7);
+}
+
+.menu ul {
+  text-align: center;
+}
+
+.menu > li {
+  float: left;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu a { 
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.menu a:hover { 
+  transform: translateY(3px);
+  background-color: orangered;
+}
+
+.menu li ul {
+  display: none;
+  position: absolute;
+  right: 0; /* o right:-140px; para que el submenu salga a la derecha */
+  top: 100%; /* para que aparezca desde abajo */
+  background-color: rgb(182, 27, 27);
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+/*MENU*/
+
+/*fondo de la pagina y  titulo*/
+h1 {
+  position:static;
+  bottom: 20px;
+  left: 20px;
+  font-size: 48px;
+    font-weight:bold;
+    color: #eaee08;
+}
+
+.fondo {
+  width: 100%;
+  height: 300px;  
+  filter: brightness(0.7);
+  background-image: url('https://ssearenabelfast.s3.amazonaws.com/_1200x630_crop_center-center_82_none/twenty-one-pilots-website-header-1600-x-900.png?mtime=1711453938');
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*fondo de la pagina y titulo*/
+ 
+
+/*ULTIMO ALBUM*/
+.album img {
+  width: 200px; /* Tamaño fijo para las imágenes */
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados opcionales */
+  transition: transform 0.3s ease; 
+
+}
+
+.album img:hover {
+    transform: scale(1.1); 
+  }
+/*ULTIMO ALBUM*/
+
+/*DISCOGRAFIA*/
+.discografia{
+  display: flex;
+       gap: 20px; /* Espacio entre imágenes */
+        flex-wrap: wrap; /* Permite que bajen en pantallas pequeñas */
+        justify-content: center; /* Centra las imágenes */
+}
+
+.discografia img{
+  width: 200px; /* Tamaño fijo para las imágenes */
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados opcionales */
+  transition: transform 0.3s ease; /* Animación al pasar el mouse */
+
+}
+
+
+.discografia img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+}
+
+.discografia p {
+  color: #eaee08;
+  font-family: Arial, sans-serif
+}
+
+/*DISCOGRAFIA*/
+.album p {
+    color: #eaee08;
+}
+
+
+h2,h3,h4{
+  color: #eaee08;
+}
+
+/* SUS CANCIONES MAS POPULARES*/
+section{
+  display:flex;
+  width: 100%;
+  height:330px;
+
+}
+section a img {
+  display:block;
+  width: 180px;
+  height: 200px;
+  
+}
+
+section img{
+  width: 0px;
+  flex-grow:1;
+  border-radius: 10px;
+  object-fit:cover;
+  position: center;
+  opacity: .8;
+  transition: .5 ease;
+}
+
+section img:hover{
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*SUS CANCIONES MAS POPULARES*/
